@@ -3,12 +3,12 @@ entries:
   test:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-04-19T13:29:51.22250116Z"
+    created: "2022-04-19T13:51:03.90720861Z"
     description: A Helm chart for Kubernetes
-    digest: d90d2b6a5abdce859135580c14933e15702b6fbac2e751e7a0c108f4961210df
+    digest: 6d2eb67ce47fcbca1690519331aefd38391a7df64fd8e7304c8de703067861e1
     name: test
     type: application
     urls:
-    - https://github.com/alpiquero/test-workflows-1/releases/download/test-1.1.1/test-1.1.1.tgz
-    version: 1.1.1
-generated: "2022-04-19T13:29:51.22250676Z"
+    - https://github.com/alpiquero/test-workflows-1/releases/download/test-1.1.2/test-1.1.2.tgz
+    version: 1.1.2
+generated: "2022-04-19T13:51:03.90721361Z"
