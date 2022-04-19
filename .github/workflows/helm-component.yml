@@ -6,17 +6,17 @@ on:
       - main
       - "release/v*"
     paths:
-      - "helm/test/**/*"
-      - "!helm/test/Chart.yaml"
-      - "!helm/test/values.yaml"
+      - "helm/test-workflows-1/**/*"
+      - "!helm/test-workflows-1/Chart.yaml"
+      - "!helm/test-workflows-1/values.yaml"
   push:
     branches:
       - main
       - "release/v*"
     paths:
-      - "helm/test/**/*"
-      - "!helm/test/Chart.yaml"
-      - "!helm/test/values.yaml"
+      - "helm/test-workflows-1/**/*"
+      - "!helm/test-workflows-1/Chart.yaml"
+      - "!helm/test-workflows-1/values.yaml"
 
 jobs:
   helm-lint:
