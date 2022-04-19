@@ -1,0 +1,23 @@
+name: Component Build
+
+on:
+  pull_request:
+    branches:
+      - main
+      - "release/v*"
+    paths:
+      - "component/**/*"
+  push:
+    branches:
+      - main
+      - "release/v*"
+    paths:
+      - "component/**/*"
+
+concurrency: build_component
+
+jobs:
+  lint-dockerfile:
+    uses: konstellation-io/github-workflows/.github/workflows/lint-dockerfile.yaml@fix/avoid_workflow_run_on_pr
+    with:
+      component_path: component

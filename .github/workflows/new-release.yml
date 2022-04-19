@@ -1,0 +1,15 @@
+name: New Release
+
+on:
+  workflow_dispatch:
+
+
+jobs:
+  new-release:
+    uses: konstellation-io/github-workflows/.github/workflows/new-release.yaml@fix/avoid_workflow_run_on_pr
+    with:
+      chart_file: helm/test/Chart.yaml
+      chart_path: helm
+      chart_url: http://aacecandev.github.io
+    secrets:
+      pat: ${{ secrets.PATNAME }}

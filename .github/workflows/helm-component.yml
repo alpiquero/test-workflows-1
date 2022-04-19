@@ -1,0 +1,23 @@
+name: Helm Component
+
+on:
+  pull_request:
+    branches:
+      - main
+      - "release/v*"
+    paths:
+      - "helm/test/**/*"
+      - "!helm/test/Chart.yaml"
+      - "!helm/test/values.yaml"
+  push:
+    branches:
+      - main
+      - "release/v*"
+    paths:
+      - "helm/test/**/*"
+      - "!helm/test/Chart.yaml"
+      - "!helm/test/values.yaml"
+
+jobs:
+  helm-lint:
+    uses: konstellation-io/github-workflows/.github/workflows/helm-lint.yaml@fix/avoid_workflow_run_on_pr
