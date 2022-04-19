@@ -8,8 +8,8 @@ jobs:
   new-release:
     uses: konstellation-io/github-workflows/.github/workflows/new-release.yaml@fix/avoid_workflow_run_on_pr
     with:
-      chart_file: helm/test/Chart.yaml
+      chart_file: helm/test-workflows-1/Chart.yaml
       chart_path: helm
-      chart_url: http://aacecandev.github.io
+      chart_url: http://alpiquero.github.io
     secrets:
       pat: ${{ secrets.PATNAME }}
