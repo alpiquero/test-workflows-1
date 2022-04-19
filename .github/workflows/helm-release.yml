@@ -6,6 +6,9 @@ on:
       - "Component Build"
     types:
       - completed
+    branches:
+      - 'release/**'
+      - main
 
 jobs:
   helm-release:
